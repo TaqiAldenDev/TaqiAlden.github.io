@@ -208,8 +208,8 @@ contactForm.addEventListener('submit', async (e) => {
     // Send email using EmailJS
     try {
         const response = await emailjs.send(
-            'YOUR_SERVICE_ID',    // You'll need to replace this
-            'YOUR_TEMPLATE_ID',   // You'll need to replace this
+            'service_1lh1iia',    // You'll need to replace this
+            'template_c2gsi2q',   // You'll need to replace this
             {
                 from_name: data.name,
                 from_email: data.email,
