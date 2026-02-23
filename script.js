@@ -171,8 +171,9 @@ const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
 // Initialize EmailJS (replace with your actual Public Key)
-(function() {
-    emailjs.init("YOUR_PUBLIC_KEY_HERE"); // You'll need to replace this
+(function () {
+    // IMPORTANT: Replace "YOUR_PUBLIC_KEY_HERE" with your actual EmailJS public key
+    emailjs.init("dFK3xqLME20j9i1Qn");
 })();
 
 contactForm.addEventListener('submit', async (e) => {
@@ -227,8 +228,20 @@ contactForm.addEventListener('submit', async (e) => {
         }
 
     } catch (error) {
-        console.error('EmailJS error:', error);
-        showMessage('Oops! Something went wrong. Please try again later.', 'error');
+        // Detailed error logging for debugging
+        console.error('EmailJS Error Details:', {
+            message: error.message,
+            text: error.text,
+            status: error.status,
+            fullError: error
+        });
+
+        // specific message for common errors
+        if (error.status === 401 || error.status === 403) {
+            showMessage('Configuration error: Invalid EmailJS Public Key.', 'error');
+        } else {
+            showMessage('Oops! Something went wrong. Please check your internet connection or try again later.', 'error');
+        }
     } finally {
         submitBtn.classList.remove('loading');
         submitBtn.disabled = false;
