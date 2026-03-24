@@ -18,514 +18,583 @@
 
     <title>Taqi Al-Den | Back-End & Android Developer</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation -->
+
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    
+    <div class="grid-overlay" aria-hidden="true"></div>
+    
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">Taqi Al-Den<span class="accent">.</span></a>
+            <a href="#home" class="nav-logo"><span class="logo-bracket logo-highlight">&lt;</span>Taqi<span class="logo-bracket logo-highlight">&gt;</span></a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="assets/cv/Taqi Al-Den.pdf" download class="btn-cv">Download CV</a></li>
+                <li><a href="#home" class="nav-link active"><span class="nav-num">01</span>Home</a></li>
+                <li><a href="#about" class="nav-link"><span class="nav-num">02</span>About</a></li>
+                <li><a href="#education" class="nav-link"><span class="nav-num">03</span>Education</a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-num">04</span>Skills</a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-num">05</span>Projects</a></li>
+                <li><a href="#certifications" class="nav-link"><span class="nav-num">06</span>Certs</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-num">07</span>Contact</a></li>
+                <li><a href="assets/cv/Taqi Al-Den.pdf" download class="btn-cv">
+                    <i class="fas fa-download"></i> Resume
+                </a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="grid-pattern"></div>
-        </div>
-        <div class="hero-content">
-            <p class="hero-greeting">Hi, my name is</p>
-            <h1 class="hero-name">Taqi Al-Den Al-shamali<span class="accent">.</span></h1>
-            <h2 class="hero-tagline">
-                <span class="typewriter">Computer Science Graduate | Back-End & Android Developer</span>
-            </h2>
-            <p class="hero-description">
-                Security-focused developer specialized in <span class="highlight">PHP (Laravel)</span> and
-                <span class="highlight">Java (Firebase)</span>. Expert in engineering complex, multi-role systems
-                that deliver high-impact results.
-            </p>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-secondary">View My Work</a>
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
             </div>
-            <div class="hero-contact">
-                <a href="tel:+962720693" class="contact-icon" aria-label="Phone" title="Phone">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+                Taqi<br>
+                <span class="name-outline">Al-Den</span>
+                <span class="name-dot accent-color">.</span>
+            </h1>
+            <div class="hero-role">
+                <span class="role-tag">&lt;</span>
+                <span class="typewriter" id="typewriter">Back-End Developer</span>
+                <span class="role-tag">/&gt;</span>
+            </div>
+            <p class="hero-desc">
+                Security-focused engineer building complex, multi-role systems.<br>
+                Specialized in <strong>PHP · Laravel · Java · Firebase</strong>.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary-hero">
+                    View Projects <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-ghost-hero">
+                    Get In Touch
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/TaqiAldenDev" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/taqialshamali/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:taqidev1@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+962720693" class="social-link" title="Phone">
                     <i class="fas fa-phone"></i>
                 </a>
-                <a href="mailto:taqidev1@gmail.com" class="contact-icon" aria-label="Email" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/TaqiAldenDev" target="_blank" rel="noopener noreferrer"
-                    class="contact-icon" aria-label="GitHub" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/taqi-al-den-a-5b0a86241/" target="_blank" rel="noopener noreferrer"
-                    class="contact-icon" aria-label="LinkedIn" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+
+        
+        <div class="hero-code-card float-card" aria-hidden="true">
+            <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="code-filename">developer.php</span>
             </div>
+            <pre class="code-body"><span class="kw">class</span> <span class="cls">TaqiAlDen</span> {
+  <span class="kw">private</span> <span class="var">$stack</span> = [
+    <span class="str">'PHP'</span>, <span class="str">'Laravel'</span>,
+    <span class="str">'Java'</span>, <span class="str">'Firebase'</span>,
+    <span class="str">'MySQL'</span>, <span class="str">'Android'</span>
+  ];
+
+  <span class="kw">public function</span> <span class="fn">passion</span>() {
+    <span class="kw">return</span> <span class="str">"Clean. Secure. Fast."</span>;
+  }
+}</pre>
+        </div>
+
+        <div class="scroll-hint">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
+    
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-number">01.</span> About Me
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate <span class="highlight">Computer Science graduate</span> from Jadara University
-                        with a deep commitment to continuous learning and technological excellence. My journey in
-                        software
-                        development has been driven by an insatiable curiosity and dedication to mastering new
-                        technologies.
-                    </p>
-                    <p>
-                        As a <span class="highlight">lifelong learner</span>, I specialize in creating secure, scalable
-                        applications that solve real-world problems. My expertise spans back-end development with
-                        <span class="highlight">PHP and Laravel</span>, mobile development with
-                        <span class="highlight">Android (Java & Firebase)</span>, and building complex systems with
-                        role-based access control and advanced security measures.
-                    </p>
-                    <p>
-                        I take pride in delivering <span class="highlight">high-impact results</span> through clean
-                        code,
-                        thoughtful architecture, and attention to detail. Whether it's reducing supervisor assignment
-                        time
-                        by 80% or implementing real-time analytics dashboards, I focus on creating solutions that make a
-                        measurable difference.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="assets/images/profile.jpg" alt="Taqi Al-Den - Profile Photo" class="profile-image">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-num">02</span>
+                <span class="label-text">About Me</span>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="avatar-container">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-placeholder">
+                            <img src="assets/images/profile.jpg" alt="Taqi Al-Den - Profile Photo" class="avatar-image">
+                        </div>
+                        <div class="avatar-badge">
+                            <i class="fas fa-map-marker-alt"></i> Irbid, Jordan
+                        </div>
+                    </div>
+                    <div class="about-quick-facts">
+                        <div class="quick-fact">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>CS Graduate, Jadara University</span>
+                        </div>
+                        <div class="quick-fact">
+                            <i class="fas fa-briefcase"></i>
+                            <span>3 Years Freelance Experience</span>
+                        </div>
+                        <div class="quick-fact">
+                            <i class="fas fa-lock"></i>
+                            <span>Security-Focused Development</span>
+                        </div>
+                        <div class="quick-fact">
+                            <i class="fas fa-rocket"></i>
+                            <span>Currently learning Laravel & Flutter</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="about-content">
+                    <h2 class="about-heading">
+                        Building secure systems<br>
+                        <span class="accent-color">that actually ship.</span>
+                    </h2>
+                    <p class="about-para">
+                        I'm a Computer Science graduate from Jadara University, Jordan. My journey started with curiosity about how things work under the hood — and turned into a career building complex, multi-role systems that solve real problems.
+                    </p>
+                    <p class="about-para">
+                        From designing <strong>role-based access control</strong> for virtual schools to engineering real-time Android marketplaces, I focus on delivering clean, secure code with measurable impact.
+                    </p>
+                    <p class="about-para">
+                        I engineer with an eye on performance and security first — using PDO prepared statements, bcrypt hashing, and CSRF protection as defaults, not afterthoughts.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
+    
     <section id="education" class="section education">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-number">02.</span> Education
-            </h2>
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-num">03</span>
+                <span class="label-text">Education</span>
+            </div>
             <div class="education-content">
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="education-details">
-                        <h3 class="degree">Bachelor of Science in Computer Science</h3>
-                        <p class="university">Jadara University</p>
-                        <div class="education-meta">
-                            <span class="timeline"><i class="far fa-calendar"></i> 2021 - 2025</span>
-                            <span class="gpa"><i class="fas fa-award"></i> GPA: Very Good</span>
-                        </div>
-                        <p class="graduation-info">Expected Graduation: Semester I (2025/2026)</p>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-details">
+                        <h4>B.Sc. Computer Science</h4>
+                        <p>Jadara University · 2021–2026</p>
+                        <span class="edu-grade">Grade: Very Good</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    
+    <section id="skills" class="section skills-section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-number">03.</span> Skills & Technologies
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="category-title">Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Java</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="category-title">Mobile Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Android (Java)</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag progress">Flutter & Dart <small>(in progress)</small></span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3 class="category-title">Web Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag progress">Laravel <small>(in progress)</small></span>
-                    </div>
-                </div>
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-num">04</span>
+                <span class="label-text">Skills & Stack</span>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="section-number">04.</span> Featured Projects
-            </h2>
-            <div class="projects-grid">
-                <!-- Project 1: EduWave -->
-                <article class="project-card" data-url="https://github.com/TaqiAldenDev/EduWaveNEW"
-                    style="cursor: pointer;">
-                    <div class="project-image">
-                        <img src="assets/images/projects/eduwave.png" alt="EduWave Virtual School Management System">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/YOUR_GITHUB_USERNAME/eduwave" target="_blank"
-                                    rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
+            <div class="skills-layout">
+                <div class="skills-intro">
+                    <h2 class="skills-heading">
+                        Tech I work with<br>
+                        <span class="accent-color">every day.</span>
+                    </h2>
+                    <p class="skills-desc">
+                        Focused on back-end engineering and mobile, with a growing presence in modern frameworks.
+                    </p>
+
+                    <div class="lang-section">
+                        <h4 class="lang-title"><i class="fas fa-language"></i> Languages</h4>
+                        <div class="lang-bars">
+                            <div class="lang-bar-item">
+                                <span>Arabic</span>
+                                <div class="bar"><div class="bar-fill" style="--w:100%"></div></div>
+                                <span class="lang-lvl">Native</span>
+                            </div>
+                            <div class="lang-bar-item">
+                                <span>English</span>
+                                <div class="bar"><div class="bar-fill" style="--w:85%"></div></div>
+                                <span class="lang-lvl">Proficient</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
+                </div>
+
+                <div class="skills-cards">
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon web"><i class="fas fa-server"></i></div>
+                        <h3>Back-End</h3>
+                        <div class="skill-pills">
+                            <span class="pill hot">PHP</span>
+                            <span class="pill hot">MySQL</span>
+                            <span class="pill learning">Laravel ✦</span>
+                            <span class="pill">AJAX / jQuery</span>
+                            <span class="pill">Bootstrap 5</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon mobile"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Android / Mobile</h3>
+                        <div class="skill-pills">
+                            <span class="pill hot">Java</span>
+                            <span class="pill hot">Firebase</span>
+                            <span class="pill hot">SQLite</span>
+                            <span class="pill">FCM</span>
+                            <span class="pill learning">Flutter ✦</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon lang"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                        <div class="skill-pills">
+                            <span class="pill hot">Java</span>
+                            <span class="pill hot">PHP</span>
+                            <span class="pill hot">C++</span>
+                            <span class="pill hot">C#</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">HTML / CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon tools"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & Other</h3>
+                        <div class="skill-pills">
+                            <span class="pill hot">Git / GitHub</span>
+                            <span class="pill hot">OOP</span>
+                            <span class="pill hot">RBAC</span>
+                            <span class="pill">CCNA</span>
+                            <span class="pill">Cybersecurity</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon tools soft"><i class="fas fa-users"></i></div>
+                        <h3>Soft Skills</h3>
+                        <div class="skill-pills">
+                            <span class="pill hot">Problem Solving</span>
+                            <span class="pill hot">Team Collaboration</span>
+                            <span class="pill hot">Technical Documentation</span>
+                            <span class="pill hot">Client Communication</span>
+                            <span class="pill hot">Time Management</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-card-icon tools method"><i class="fas fa-cogs"></i></div>
+                        <h3>Methodologies</h3>
+                        <div class="skill-pills">
+                            <span class="pill hot">Agile Development</span>
+                            <span class="pill hot">SDLC</span>
+                            <span class="pill hot">Clean Code Architecture</span>
+                            <span class="pill hot">Security Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pills-note">✦ Currently learning</p>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-num">05</span>
+                <span class="label-text">Featured Projects</span>
+            </div>
+
+            <h2 class="projects-heading">
+                Things I've <span class="accent-color">built.</span>
+            </h2>
+
+            <div class="projects-list">
+
+                
+                <article class="project-item fade-in" data-url="https://github.com/TaqiAldenDev/EduWaveNEW">
+                    <div class="project-num">01</div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <div class="project-badges">
+                                <span class="badge web">Web Platform</span>
+                                <span class="badge featured">Featured</span>
+                            </div>
+                            <a href="https://github.com/TaqiAldenDev/EduWaveNEW" target="_blank" rel="noopener" class="project-gh-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                         <h3 class="project-title">EduWave</h3>
                         <p class="project-subtitle">Virtual School Management System</p>
-                        <p class="project-description">
-                            Full-stack web platform featuring role-based access control (RBAC) for five distinct roles.
-                            Implements advanced security measures and real-time analytics.
+                        <p class="project-desc">
+                            Full-stack web platform connecting students, teachers, parents, and administrators. Built with Role-Based Access Control for five distinct user types — each with secure, personalized dashboards. Includes real-time analytics with ApexCharts and automated PDF certificate generation.
                         </p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check"></i> PDF certificate generation</li>
-                            <li><i class="fas fa-check"></i> Real-time analytics with ApexCharts</li>
-                            <li><i class="fas fa-check"></i> Security: PDO, bcrypt, CSRF protection</li>
-                            <li><i class="fas fa-check"></i> Multi-role authentication system</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Bootstrap 5</span>
+                        <div class="project-highlights">
+                            <span><i class="fas fa-users"></i> 5 user roles, RBAC</span>
+                            <span><i class="fas fa-chart-line"></i> Real-time analytics</span>
+                            <span><i class="fas fa-lock"></i> PDO, bcrypt, CSRF</span>
+                        </div>
+                        <div class="project-stack">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap 5</span><span>ApexCharts</span>
                         </div>
                     </div>
+                    <div class="project-glow"></div>
                 </article>
 
-                <!-- Project 2: Graduation Project Management -->
-                <article class="project-card" data-url="https://github.com/YOUR_GITHUB_USERNAME/graduation-project"
-                    style="cursor: pointer;">
-                    <div class="project-image">
-                        <img src="assets/images/projects/graduation-project.png"
-                            alt="Graduation Project Management System">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/YOUR_GITHUB_USERNAME/graduation-project" target="_blank"
-                                    rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                
+                <article class="project-item fade-in">
+                    <div class="project-num">02</div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <div class="project-badges">
+                                <span class="badge web">Web App</span>
+                                <span class="badge ai">AI-Powered</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
                         <h3 class="project-title">Graduation Project Management System</h3>
                         <p class="project-subtitle">AI-Powered Academic Platform</p>
-                        <p class="project-description">
-                            Innovative PHP-MySQL web application with AI keyword-matching algorithm for intelligent
-                            supervisor assignment and comprehensive role-based dashboards.
+                        <p class="project-desc">
+                            A PHP-MySQL platform that automates supervisor assignment using a custom AI keyword-matching algorithm. Dramatically reduced manual coordination time by <strong>80%</strong> through intelligent matching and role-based dashboards for students, supervisors, and administrators.
                         </p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check"></i> AI keyword matching for supervisor assignment</li>
-                            <li><i class="fas fa-check"></i> 80% reduction in assignment time</li>
-                            <li><i class="fas fa-check"></i> Role-based dashboards and analytics</li>
-                            <li><i class="fas fa-check"></i> Automated workflow management</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">AI Algorithm</span>
-                            <span class="tech-tag">RBAC</span>
+                        <div class="project-highlights">
+                            <span><i class="fas fa-brain"></i> AI keyword matching</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 80% time reduction</span>
+                            <span><i class="fas fa-shield-alt"></i> Prepared statements</span>
+                        </div>
+                        <div class="project-stack">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>RBAC</span><span>Algorithm</span>
                         </div>
                     </div>
+                    <div class="project-glow"></div>
                 </article>
 
-                <!-- Project 3: AutoParts Jo -->
-                <article class="project-card" data-url="https://github.com/YOUR_GITHUB_USERNAME/autoparts-jo"
-                    style="cursor: pointer;">
-                    <div class="project-image">
-                        <img src="assets/images/projects/autoparts.png" alt="AutoParts Jo Android Marketplace">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/YOUR_GITHUB_USERNAME/autoparts-jo" target="_blank"
-                                    rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                
+                <article class="project-item fade-in">
+                    <div class="project-num">03</div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <div class="project-badges">
+                                <span class="badge android">Android</span>
+                                <span class="badge marketplace">Marketplace</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
                         <h3 class="project-title">AutoParts Jo</h3>
                         <p class="project-subtitle">Multi-Role Android Marketplace</p>
-                        <p class="project-description">
-                            Comprehensive Android marketplace application with Firebase backend, featuring real-time
-                            inventory management and push notifications.
+                        <p class="project-desc">
+                            Native Android marketplace for auto parts. Sellers manage real-time inventory with image uploads; buyers place orders with live status tracking. Built with Firebase Auth, Firestore, Storage, and FCM push notifications for seamless end-to-end order flows.
                         </p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check"></i> Multi-role user system (buyers/sellers)</li>
-                            <li><i class="fas fa-check"></i> Real-time inventory tracking</li>
-                            <li><i class="fas fa-check"></i> Firebase Cloud Messaging (FCM)</li>
-                            <li><i class="fas fa-check"></i> Advanced search and filtering</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">FCM</span>
+                        <div class="project-highlights">
+                            <span><i class="fas fa-fire"></i> Firebase backend</span>
+                            <span><i class="fas fa-bell"></i> FCM notifications</span>
+                            <span><i class="fas fa-boxes"></i> Real-time inventory</span>
+                        </div>
+                        <div class="project-stack">
+                            <span>Java</span><span>Android</span><span>Firebase</span><span>Firestore</span><span>FCM</span>
                         </div>
                     </div>
+                    <div class="project-glow"></div>
                 </article>
 
-                <!-- Project 4: TaskMaster -->
-                <article class="project-card" data-url="https://github.com/YOUR_GITHUB_USERNAME/taskmaster"
-                    style="cursor: pointer;">
-                    <div class="project-image">
-                        <img src="assets/images/projects/taskmaster.png" alt="TaskMaster Android Task Manager">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/YOUR_GITHUB_USERNAME/taskmaster" target="_blank"
-                                    rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                
+                <article class="project-item fade-in">
+                    <div class="project-num">04</div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <div class="project-badges">
+                                <span class="badge android">Android</span>
+                                <span class="badge productivity">Productivity</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
                         <h3 class="project-title">TaskMaster</h3>
                         <p class="project-subtitle">Full-Stack Task Management App</p>
-                        <p class="project-description">
-                            Elegant Android task manager leveraging SQLite for local data persistence and featuring
-                            smart local notifications for task reminders.
+                        <p class="project-desc">
+                            Elegant Android task manager leveraging SQLite for local data persistence and featuring smart local notifications for task reminders. Provides an intuitive interface for organizing tasks with categories, priorities, and due dates.
                         </p>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check"></i> SQLite local database</li>
-                            <li><i class="fas fa-check"></i> Smart notification system</li>
-                            <li><i class="fas fa-check"></i> Intuitive task organization</li>
-                            <li><i class="fas fa-check"></i> Offline-first architecture</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Notifications</span>
+                        <div class="project-highlights">
+                            <span><i class="fas fa-database"></i> SQLite database</span>
+                            <span><i class="fas fa-bell"></i> Smart notifications</span>
+                            <span><i class="fas fa-tasks"></i> Task organization</span>
+                        </div>
+                        <div class="project-stack">
+                            <span>Java</span><span>Android</span><span>SQLite</span><span>Notifications</span>
                         </div>
                     </div>
+                    <div class="project-glow"></div>
                 </article>
+
             </div>
         </div>
     </section>
 
-    <!-- Certifications & Activities Section -->
-    <section id="certifications" class="section certifications">
+    
+    <section id="certifications" class="section certs-section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-number">05.</span> Certifications & Activities
-            </h2>
-            <div class="cert-grid">
-                <div class="cert-column">
-                    <h3 class="column-title">
-                        <i class="fas fa-certificate"></i> Certifications
-                    </h3>
-                    <ul class="cert-list">
-                        <li>
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Cyber Security - EDRAAK</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-network-wired"></i>
-                            <span>CCNA - The Hope</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cert-column">
-                    <h3 class="column-title">
-                        <i class="fas fa-trophy"></i> Activities & Experience
-                    </h3>
-                    <ul class="cert-list">
-                        <li>
-                            <i class="fas fa-users"></i>
-                            <span>Member, Computer Science Club - Jadara University</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Android Freelance Developer (Java & SQLite / Firebase)</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-award"></i>
-                            <span>Cyber Warriors Competition - National Cyber Security Center</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-num">06</span>
+                <span class="label-text">Certifications & Activities</span>
             </div>
 
-            <div class="languages-section">
-                <h3 class="column-title">
-                    <i class="fas fa-language"></i> Languages
-                </h3>
-                <div class="languages">
-                    <div class="language-item">
-                        <div class="language-header">
-                            <span class="language-name">Arabic</span>
-                            <span class="language-level">Native</span>
-                        </div>
-                        <div class="language-bar">
-                            <div class="language-progress" style="width: 100%"></div>
-                        </div>
+            <div class="certs-grid">
+                <div class="cert-card fade-in">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cert-info">
+                        <h4>Cyber Security</h4>
+                        <p>EDRAAK</p>
+                        <span class="cert-date">July 2024</span>
                     </div>
-                    <div class="language-item">
-                        <div class="language-header">
-                            <span class="language-name">English</span>
-                            <span class="language-level">Proficient</span>
-                        </div>
-                        <div class="language-bar">
-                            <div class="language-progress" style="width: 85%"></div>
-                        </div>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="cert-info">
+                        <h4>CCNA</h4>
+                        <p>The Hope</p>
+                        <span class="cert-date">August 2024</span>
+                    </div>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="cert-info">
+                        <h4>Cyber Warriors Competition</h4>
+                        <p>National Cyber Security Center</p>
+                        <span class="cert-date">May 2023</span>
+                    </div>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cert-info">
+                        <h4>Android Freelance Developer</h4>
+                        <p>Java & Firebase · SQLite</p>
+                        <span class="cert-date">2023 – 2026</span>
+                    </div>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon"><i class="fas fa-users"></i></div>
+                    <div class="cert-info">
+                        <h4>CS Club Member</h4>
+                        <p>Jadara University</p>
+                        <span class="cert-date">2021 – 2026</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="section-number">06.</span> Get In Touch
-            </h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm currently open to new opportunities and interesting projects. Whether you have a question,
-                        want to collaborate, or just want to say hi, feel free to reach out!
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-num">07</span>
+                <span class="label-text">Get In Touch</span>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <h2 class="contact-heading">
+                        Let's build something<br>
+                        <span class="accent-color">together.</span>
+                    </h2>
+                    <p class="contact-desc">
+                        I'm open to new opportunities, freelance projects, and interesting collaborations. Reach out — I typically reply within 24 hours.
                     </p>
-                    <div class="contact-details">
-                        <a href="mailto:taqidev1@gmail.com" class="contact-detail">
-                            <i class="fas fa-envelope"></i>
+                    <div class="contact-links">
+                        <a href="mailto:taqidev1@gmail.com" class="contact-link-item">
+                            <span class="cl-icon"><i class="fas fa-envelope"></i></span>
                             <span>taqidev1@gmail.com</span>
                         </a>
-                        <a href="tel:+962789720693" class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <span>+962 789720693</span>
+                        <a href="tel:+962789720693" class="contact-link-item">
+                            <span class="cl-icon"><i class="fas fa-phone"></i></span>
+                            <span>+962 789 720 693</span>
                         </a>
-                        <a href="https://github.com/TaqiAldenDev" target="_blank" rel="noopener noreferrer"
-                            class="contact-detail">
-                            <i class="fab fa-github"></i>
-                            <span>https://github.com/TaqiAldenDev</span>
+                        <a href="https://github.com/TaqiAldenDev" target="_blank" rel="noopener" class="contact-link-item">
+                            <span class="cl-icon"><i class="fab fa-github"></i></span>
+                            <span>github.com/TaqiAldenDev</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/taqi-al-den-a-5b0a86241/" target="_blank" rel="noopener noreferrer"
-                            class="contact-detail">
-                            <i class="fab fa-linkedin"></i>
-                            <span>https://www.linkedin.com/in/taqi-al-den-a-5b0a86241/</span>
+                        <a href="https://www.linkedin.com/in/taqialshamali/" target="_blank" rel="noopener" class="contact-link-item">
+                            <span class="cl-icon"><i class="fab fa-linkedin-in"></i></span>
+                            <span>taqialshamali</span>
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" required>
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
-                    </button>
-                    <div class="form-message" id="formMessage"></div>
-                </form>
+
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Taqi Al-Den. Built with <span class="accent">passion</span> and <span
-                    class="accent">dedication</span>.</p>
-            <div class="footer-social">
-                <a href="https://github.com/TaqiAldenDev" target="_blank" rel="noopener noreferrer"
-                    aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/taqi-al-den-a-5b0a86241/" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:taqidev1@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        <div class="footer-inner">
+            <a href="#home" class="footer-logo">
+                <span class="logo-bracket">&lt;</span><span class="logo-accent">/</span>Taqi<span class="logo-bracket">&gt;</span>
+            </a>
+            <p class="footer-copy">© 2026 Taqi Al-Den Alshamali — Built with passion from Irbid, Jordan.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/TaqiAldenDev" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/taqialshamali/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:taqidev1@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <!-- Main JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
