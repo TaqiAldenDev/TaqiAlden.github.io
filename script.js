@@ -51,7 +51,7 @@ function updateActiveNav() {
 }
 
 // ── Typewriter ──────────────────────────────
-const roles = ['Back-End Developer', 'Android Developer','Security-Focused Dev'];
+const roles = ['Full-Stack (MERN) Developer', 'Android Developer', 'Security-Focused Dev'];
 let roleIdx = 0, charIdx = 0, deleting = false;
 const typeEl = document.getElementById('typewriter');
 
@@ -130,7 +130,7 @@ if (contactForm) {
         btn.querySelector('.btn-text').textContent = 'Sending…';
 
         try {
-            const res = await emailjs.send('service_1lh1iia', 'template_c2gsi2q', {
+            const res = await emailjs.send('service_1lh1iia', 'template_y92olre', {
                 from_name:  data.name,
                 from_email: data.email,
                 subject:    data.subject,
